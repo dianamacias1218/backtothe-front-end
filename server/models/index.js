@@ -1,3 +1,4 @@
-// todo: build models and link to index
+const User = require('./User');
+const Thought = require('./Note');
 
-module.exports = {};
+module.exports = { User, Note };
