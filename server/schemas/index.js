@@ -1,3 +1,4 @@
-// todo: build schemas and link to index
+const typeDefs = require('./typeDefs');
+const resolvers = require('./resolvers');
 
-module.exports = {};
+module.exports = { typeDefs, resolvers };
