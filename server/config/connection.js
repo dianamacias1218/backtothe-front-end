@@ -1,7 +1,7 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/react-router-demo',
+  process.env.MONGODB_URI || "mongodb://localhost:27017/project3",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
