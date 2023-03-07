@@ -1,13 +1,53 @@
-// This will hold the query `GET_ME`, which will execute the `me` query set up using Apollo Server.
-import gql from "graphql-tag";
+import { gql } from '@apollo/client';
 
-export const GET_ME = gql`
-  {
+export const QUERY_USER = gql`
+  query user($username: String!) {
+    user(username: $username) {
+      _id
+      username
+      email
+      notes {
+        _id
+        noteText
+        createdAt
+      }
+    }
+  }
+`;
+
+export const QUERY_NOTE = gql`
+  query getNotes {
+    notes {
+      _id
+      noteText
+      noteAuthor
+      createdAt
+    }
+  }
+`;
+
+export const QUERY_SINGLE_NOTE = gql`
+  query getSingleNote($noteId: ID!) {
+    note(noteId: $noteId) {
+      _id
+      noteText
+      noteAuthor
+      createdAt
+    }
+  }
+`;
+
+export const QUERY_ME = gql`
+  query me {
     me {
       _id
       username
       email
-      //  todo: add the queries for thoughts and todos
+      notes {
+        _id
+        noteText
+        noteAuthor
+        createdAt
       }
     }
   }
