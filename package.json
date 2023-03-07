@@ -19,5 +19,9 @@
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^5.1.0"
+  },
+  "dependencies": {
+    "postcss-normalize": "^10.0.1",
+    "postcss-preset-env": "^8.0.1"
   }
 }
