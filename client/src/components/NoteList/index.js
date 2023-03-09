@@ -12,7 +12,7 @@ const NoteList = ({ notes, title, showTitle = true, showUsername = true }) => {
       {notes &&
         notes.map((note) => (
           <div key={note._id} className="card mb-3">
-            <h4 className="card-header bg-primary text-light p-2 m-0">
+            <h4 className="card-header text-light p-2 m-0" id="noteheader">
               {showUsername ? (
                 <Link
                   className="text-light"
@@ -31,7 +31,7 @@ const NoteList = ({ notes, title, showTitle = true, showUsername = true }) => {
                 </>
               )}
             </h4>
-            <div className="card-body bg-light p-2">
+            <div className="card-body p-2" id="textarea">
               <p>{note.noteText}</p>
             </div>
             {/* <Link

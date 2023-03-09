@@ -26,11 +26,11 @@ const NoteForm = () => {
       }
 
       // update me object's cache
-      // const { me } = cache.readQuery({ query: QUERY_ME });
-      // cache.writeQuery({
-      //   query: QUERY_ME,
-      //   data: { me: { ...me, notes: [...me.notes, addNote] } },
-      // });
+      const { me } = cache.readQuery({ query: QUERY_ME });
+      cache.writeQuery({
+        query: QUERY_ME,
+        data: { me: { ...me, notes: [...me.notes, addNote] } },
+      });
     },
   });
 
@@ -61,7 +61,7 @@ const NoteForm = () => {
   };
 
   return (
-    <div>
+    <div className="p-4" id="note">
       <h3>What's on your mind?</h3>
 
       {Auth.loggedIn() ? (
@@ -83,13 +83,14 @@ const NoteForm = () => {
                 placeholder="Here's a new note..."
                 value={noteText}
                 className="form-input w-100"
+                id="textarea"
                 style={{ lineHeight: "1.5", resize: "vertical" }}
                 onChange={handleChange}
               ></textarea>
             </div>
 
             <div className="col-12 col-lg-3">
-              <button className="btn btn-primary btn-block py-3" type="submit">
+              <button className="btn btn-info btn-block py-3" type="submit">
                 Add Note
               </button>
             </div>
