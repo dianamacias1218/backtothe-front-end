@@ -108,7 +108,7 @@ zmirza7701@gmail.com<br />
 
 ## Copyright
 
-Copyright 2023 Cayson Bond, Diana Marcias Castillo, Tim Fleck, Zarrar Mirza
+Copyright 2023 Cayson Bond, Diana Macias Castillo, Tim Fleck, Zarrar Mirza
 
 ## Testing
 
