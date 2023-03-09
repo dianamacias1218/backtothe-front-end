@@ -95,10 +95,10 @@ N/A
 
 ## How to Contribute
 
-Cayson Bond, Diana Marcias Castillo, Tim Fleck, Zarrar Mirza<br />
+Cayson Bond, Diana Macias Castillo, Tim Fleck, Zarrar Mirza<br />
 Full-Stack Developers<br />
 ![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white) [C-Bond21](https://github.com/C-Bond21)<br />
-![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white) [DIANAMARCIAS1218](https://github.com/dianamacias1218)<br />
+![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white) [DIANAMACIAS1218](https://github.com/dianamacias1218)<br />
 ![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white) [CHUCA78](https://github.com/Chuca78)<br />
 ![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white) [ZMIRZA0](https://github.com/zmirza0)<br />
 cwbond21@gmail.com<br />
