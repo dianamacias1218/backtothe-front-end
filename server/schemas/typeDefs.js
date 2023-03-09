@@ -12,6 +12,7 @@ const typeDefs = gql`
   type Note {
     _id: ID
     noteText: String
+    noteAuthor: String
     createdAt: String
   }
 
