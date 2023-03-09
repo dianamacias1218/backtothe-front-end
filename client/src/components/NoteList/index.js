@@ -1,12 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-const NoteList = ({
-  notes,
-  title,
-  showTitle = true,
-  showUsername = true,
-}) => {
+const NoteList = ({ notes, title, showTitle = true, showUsername = true }) => {
   if (!notes.length) {
     return <h3>No Notes Yet</h3>;
   }
@@ -24,13 +19,13 @@ const NoteList = ({
                   to={`/profiles/${note.noteAuthor}`}
                 >
                   {note.noteAuthor} <br />
-                  <span style={{ fontSize: '1rem' }}>
+                  <span style={{ fontSize: "1rem" }}>
                     had this note on {note.createdAt}
                   </span>
                 </Link>
               ) : (
                 <>
-                  <span style={{ fontSize: '1rem' }}>
+                  <span style={{ fontSize: "1rem" }}>
                     You had this note on {note.createdAt}
                   </span>
                 </>
@@ -39,12 +34,12 @@ const NoteList = ({
             <div className="card-body bg-light p-2">
               <p>{note.noteText}</p>
             </div>
-            <Link
+            {/* <Link
               className="btn btn-primary btn-block btn-squared"
               to={`/notes/${note._id}`}
             >
               Join the discussion on this note.
-            </Link>
+            </Link> */}
           </div>
         ))}
     </div>
