@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { useMutation } from '@apollo/client';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { useMutation } from "@apollo/client";
 
-import { ADD_NOTE } from '../../utils/mutations';
-import { QUERY_NOTES, QUERY_ME } from '../../utils/queries';
+import { ADD_NOTE } from "../../utils/mutations";
+import { QUERY_NOTES, QUERY_ME } from "../../utils/queries";
 
-import Auth from '../../utils/auth';
+import Auth from "../../utils/auth";
 
 const NoteForm = () => {
-  const [noteText, setNoteText] = useState('');
+  const [noteText, setNoteText] = useState("");
 
   const [characterCount, setCharacterCount] = useState(0);
 
@@ -26,11 +26,11 @@ const NoteForm = () => {
       }
 
       // update me object's cache
-      const { me } = cache.readQuery({ query: QUERY_ME });
-      cache.writeQuery({
-        query: QUERY_ME,
-        data: { me: { ...me, notes: [...me.notes, addNote] } },
-      });
+      // const { me } = cache.readQuery({ query: QUERY_ME });
+      // cache.writeQuery({
+      //   query: QUERY_ME,
+      //   data: { me: { ...me, notes: [...me.notes, addNote] } },
+      // });
     },
   });
 
@@ -45,7 +45,7 @@ const NoteForm = () => {
         },
       });
 
-      setNoteText('');
+      setNoteText("");
     } catch (err) {
       console.error(err);
     }
@@ -54,7 +54,7 @@ const NoteForm = () => {
   const handleChange = (event) => {
     const { name, value } = event.target;
 
-    if (name === 'noteText' && value.length <= 280) {
+    if (name === "noteText" && value.length <= 280) {
       setNoteText(value);
       setCharacterCount(value.length);
     }
@@ -68,7 +68,7 @@ const NoteForm = () => {
         <>
           <p
             className={`m-0 ${
-              characterCount === 280 || error ? 'text-danger' : ''
+              characterCount === 280 || error ? "text-danger" : ""
             }`}
           >
             Character Count: {characterCount}/280
@@ -83,7 +83,7 @@ const NoteForm = () => {
                 placeholder="Here's a new note..."
                 value={noteText}
                 className="form-input w-100"
-                style={{ lineHeight: '1.5', resize: 'vertical' }}
+                style={{ lineHeight: "1.5", resize: "vertical" }}
                 onChange={handleChange}
               ></textarea>
             </div>
@@ -102,7 +102,7 @@ const NoteForm = () => {
         </>
       ) : (
         <p>
-          You need to be logged in to share your notes. Please{' '}
+          You need to be logged in to share your notes. Please{" "}
           <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
         </p>
       )}

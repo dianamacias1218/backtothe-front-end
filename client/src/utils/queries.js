@@ -9,6 +9,7 @@ export const QUERY_USER = gql`
       notes {
         _id
         noteText
+        noteAuthor
         createdAt
       }
     }
