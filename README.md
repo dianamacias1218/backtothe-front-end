@@ -1,16 +1,14 @@
-# back to the-front-end
-
-# Final Project: MERN Stack Single-Page Application
+# Back to the front-end - Final Project: MERN Stack Single-Page Application
 
 ## Description
 
-Projects have played a key role in your journey to becoming a full-stack web developer. As you apply for development jobs, your portfolio is absolutely vital to opening doors to opportunities. Your portfolio showcases high-quality deployed examples of your work, and you can use your finished projects for that very purpose.
-
-This project is a fantastic opportunity to show employers your collaborative skills and coding abilities, especially in the context of a scalable, user-focused MERN app. Remember that employers want to see what you can do, but they also want to see how you work with other developers. The more examples of deployed collaborative work you have in your portfolio, the more likely you are to get an interview and a job.
+This project is a showcase of our collaborative skills and coding abilities, especially in the context of a scalable, user-focused MERN app. This project will help show employers what we can do as a team and how we work with other developers. We understand that the more examples of deployed collaborative work we have in your portfolio, the more likely we are to get an interview and a job.
 
 ## Project Requirements
 
-Your group will use everything you’ve learned throughout this course to create a MERN stack single-page application that works with real-world data to solve a real-world challenge, with a focus on data and user demand. This project will provide you with the best opportunity to demonstrate your problem-solving skills, which employers will want to see during interviews. Once again, the user story and acceptance criteria will depend on the project that you create, but your project must fulfill the following requirements:
+Our group used everything we’ve learned throughout the fullstack bootcamp course to create a MERN stack single-page application that works with real-world data to solve a real-world challenge, with a focus on data and user demand. This project provides us with the best opportunity to demonstrate our problem-solving skills, which employers will want to see during interviews. 
+
+Our project requirements were as follows:
 
 - Use React for the front end.
 
@@ -36,18 +34,6 @@ Your group will use everything you’ve learned throughout this course to create
 
 - Have a high-quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
 
-### CSS Styling
-
-Instead of using a CSS library like Bootstrap, consider one of the following suggestions:
-
-- Look into the concept of CSS-in-JS, which abstracts CSS to the component level, using JavaScript to describe styles in a declarative and maintainable way. Some popular libraries include [styled-components](https://styled-components.com/) and [Emotion](https://emotion.sh/docs/introduction).
-
-- Try using a component library, such as [Semantic UI](https://semantic-ui.com/), [Chakra UI](https://chakra-ui.com/), or [Ant Design](https://ant.design/).
-
-- Create all the CSS for your application just using CSS.
-
-Ultimately, it doesn't matter which of these options you choose&mdash;it just needs to look professional and be mobile-friendly.
-
 ## Table of Contents
 
 - [Installation](#installation)
@@ -60,10 +46,14 @@ Ultimately, it doesn't matter which of these options you choose&mdash;it just ne
 
 ## Installation
 
-For installation of the dependencies, please run the following command in the terminal:
+To start the application click the following link: <br>
+[https://warm-hamlet-10117.herokuapp.com/](https://polar-dusk-16089.herokuapp.com/)
+
+Alternately type the following command in the terminal:
 
 ```
 npm i
+npm run build
 ```
 
 ## Usage
@@ -71,8 +61,11 @@ npm i
 To start the application, please type the following command in the terminal:
 
 ```
-npm start
+npm run develop
 ```
+
+Application screenshot:
+![Note Taker](https://user-images.githubusercontent.com/97859682/224193489-ea8fac10-7228-4539-a818-1cd5dd14d0c7.png)
 
 ## Credits
 
